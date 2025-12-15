@@ -261,3 +261,23 @@ core.register_node("mytrash:sharing_bin",{
     end,
 })
 
+minetest.register_craft{
+	type = "shapeless",
+	output = "mytrash:trash_can_sm",
+	recipe = {"group:wood", "group:wood"},
+}
+minetest.register_craft{
+	type = "shapeless",
+	output = "mytrash:trash_can",
+	recipe = {"mytrash:trash_can_sm", "mytrash:trash_can_sm"},
+}
+minetest.register_craft{
+	type = "shapeless",
+	output = "mytrash:trash_bin",
+	recipe = {"mytrash:trash_can", "mytrash:trash_can"},
+}
+minetest.register_craft{
+	type = "shapeless",
+	output = "mytrash:sharing_bin",
+	recipe = {"mytrash:trash_can", "mytrash:trash_bin"},
+}
