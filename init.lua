@@ -260,7 +260,7 @@ core.register_node("mytrash:sharing_bin",{
                 formspec4(pos))
     end,
 })
-
+--crafts
 minetest.register_craft{
 	type = "shapeless",
 	output = "mytrash:trash_can_sm",
